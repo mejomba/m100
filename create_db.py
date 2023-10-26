@@ -32,7 +32,6 @@ def connect(conn, cur):
     return conn, cur, local_connection
 
 
-connect(None, None)
 
 # from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
@@ -50,3 +49,6 @@ def create_table(auto_commit=None):
     # conn.commit()
 
 # create_table(True)
+
+if __name__ == '__main__':
+    create_table(True)
